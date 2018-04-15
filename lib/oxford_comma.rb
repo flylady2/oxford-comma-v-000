@@ -6,7 +6,8 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.length == 3
     str1 = array.pop
-    str2 = array.delete_at(2).join(", ")
+    str2 = array.delete_at(2)
+
     str3 = str2<<" and "
     return str3 + str1
 
