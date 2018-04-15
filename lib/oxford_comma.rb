@@ -14,6 +14,7 @@ def oxford_comma(array)
     str2 = array[-1]
     array.pop
     array << "and"
+    str1 = array.join(", ")
     str1 + " " + str2
 
 
