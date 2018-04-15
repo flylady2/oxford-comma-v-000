@@ -8,7 +8,7 @@ def oxford_comma(array)
     str1 = array.pop
     str2 = array.delete_at(2)
 
-    str3 = str2<<" and "
+    str3 = str2<<(" and ")
     return str3 + str1
 
 
