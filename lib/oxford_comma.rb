@@ -5,10 +5,13 @@ def oxford_comma(array)
     array.length == 2
     array.join(" and ")
   elsif array.length == 3
-    str1 = array[0,1].join(", ")
-    str1 = str1<<"and"
-    str2 = array[2]
-    return str1 + str2
+    array1 = array.pop
+    array2 = array.delete_at(2)
+    str1 = array1.join
+    str2 = array2.join(", ")
+    str3 = str2<<" and "
+    return str3 + str1
+
 
   end
 
